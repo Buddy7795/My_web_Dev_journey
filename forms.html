@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <style>
+        body{
+            margin: 2px;
+            padding: 10px;
+        }
+
+        label, input {
+            /* width: 100%; */
+            overflow: hidden;
+            padding: 4px;
+            text-transform: capitalize;
+            display: block;
+        }
+        div{            
+            padding: 2px;
+            width: 20%;
+            margin: 10px auto;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <form action="post">
+        <div>
+            <label for="Firstname">firstName</label>
+            <input type="text" name = "username" id="firstname" placeholder="Enter your name" required autofocus>
+            
+            <label for="lastname">LastName</label>
+            <input type="text" name = "username" id="lastname" value="Pandeji"  placeholder="Enter your name" required>
+
+        </div>
+        
+        <div>
+            <!-- The name attributes must be same to select only single radio button at once -->
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>                   
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="profession" id="yoga">
+            <label for="yoga">Yoga</label>
+            <input type="checkbox" name="profession" id="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" name="profession" id="gym" checked>
+            <label for="gym">GYM</label>
+            <input type="checkbox" name="profession" id="dance">
+            <label for="dance">Dance</label>
+        </div>
+
+        <div>
+            <label for="yoga">Enter your comment here</label><br>
+            <textarea rows="5" cols="25" name="comments" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+
+        <div>
+            <label for="fruits">Fruits</label>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Mango">Mango</option>
+                <option value="Grapes">Grapes</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

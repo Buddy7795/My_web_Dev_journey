@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+            background-color: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+        }
+
+        .heart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotate(-45deg);
+            box-shadow: 0 0 30px  red;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%; 
+        }
+        
+        .heart::before {
+            top: -100px;
+            left: 0;
+        }
+        
+        .heart::after {
+            left: 100px;
+            top: 0;
+        } 
+        
+         .heart:hover {
+            transform: rotate(-45deg) scale(2.5);
+            box-shadow: 0 0 60px red;
+        }
+        
+         @keyframes pulse {
+            0%, 100% {
+                transform: rotate(-45deg) scale(1);
+                box-shadow: 0 0 30px red;
+            }
+            50% {
+                transform: rotate(-45deg) scale(1.05);
+                box-shadow: 0 0 50px red;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="heart" id="heart"></div>
+    <script src="temp.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tech Conference Registration</h1>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <h1>Feedback</h1>
+        <form id="feedbackForm">
+            <label for="sessionFeedback">Session Feedback:</label>
+            <textarea id="sessionFeedback" name="sessionFeedback" required></textarea>
+            <label for="networkingFeedback">Networking Feedback:</label>
+            <textarea id="networkingFeedback" name="networkingFeedback" required></textarea>
+            <label for="decorationsFeedback">Decorations Feedback:</label>
+            <textarea id="decorationsFeedback" name="decorationsFeedback" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    <script src="start.js"></script>
+</body>
+</html>

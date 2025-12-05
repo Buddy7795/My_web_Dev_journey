@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <style>
+        body{
+            margin: 10px;
+            background-color: chocolate;
+        }
+
+        div {
+            background-color: burlywood;
+            max-width: 50vh;
+            margin: auto;
+            padding: 20px;
+        }
+        label{
+            display: block;
+            margin: 2px;
+        }
+        
+        input{
+            text-align: center;
+            background-color: blanchedalmond;    
+            margin: 2px;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+        <!-- Lets create vertically aligned form asking for name, city and pincode of a user, without using br tag -->
+        <h1 style="text-align: center; color: springgreen;">Basic details</h1>
+        <form method="post">
+           <div>
+             <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required autofocus>
+
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="e.g Kablburgi">
+
+            <label for="pincode">Pincode</label>
+            <input type="number" name="pincode" id="pincode" placeholder="e.g 585105"> 
+           </div>
+        </form> 
+</body>
+</html>

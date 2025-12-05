@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html{
+            min-height: 100%;
+            overflow: hidden;
+        }
+        body{
+            color: grey;
+            font-family: "Anonymous  Pro", monospace;
+            background-color: rgb(20, 20, 20);
+        }
+        .container{
+            /* display: inline-block; */
+            display: flex;
+            /* margin: 20%; */
+        }
+        .text{
+            overflow: hidden;
+            font-size: 2.5rem;
+            font-weight: 800;
+            border-right: 0.15em solid orangered;
+            white-space: nowrap;
+            animation: typing  8s steps(40, end), blink-caret 0.5s step-end infinite;
+            animation: typing 4s steps(40,end) infinite;
+        }
+        @keyframes typing{
+            from{
+                width: 0;
+            }
+            to{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <p class="text">Mad Girl, Gubbi. I love you </p>
+</body>
+</html>

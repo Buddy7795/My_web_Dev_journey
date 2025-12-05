@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+  <style>
+    input[type=text] {
+      width: 50%;
+      padding: 8px;
+      margin: 4px 0;
+      display: block;
+      box-sizing: border-box;
+      border: 2px solid blue;
+      border-radius: 4px;
+      background-color: lightyellow;
+      font-size: 16px;
+    }
+
+
+    input[type=radio] {
+      margin: 10px;
+      background-color: lime;
+      color: coral;
+      padding: 50px
+    }
+
+    input[type=radio]:hover{
+      /* font-size: px; */
+      color: red;
+      background-color: yellow;
+      
+
+    }
+    input[type=radio]:checked {
+      background-color: orange;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <form >
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name ">
+
+    <input type="radio" name="male" id="male" checked>
+    <label for="male">Male</label>
+    <input type="radio" name="male" id="female">
+    <label for="female">Fe-Male</label>
+  </form>
+</body>
+</html>

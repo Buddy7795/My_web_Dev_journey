@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex vs Grid</title>
+    <style>
+
+        body{
+            background-color: #f0f0f0;
+            /* background: linear-gradient(to right, #990101, #d77eeb); */
+            font-family: Arial, sans-serif;
+        }
+        #flex-container h1{
+            color: blue;
+            text-align: center;
+        }
+
+        #flex-container .flex-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            border-radius: 100px;
+            box-shadow: 0px 0px 100px rgba(173, 243, 11, 1);
+        }
+        
+        #flex-container .flex-images img {
+            width: auto;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        #grid-container h1{
+            color: green;
+            text-align: center;
+        }
+        
+        #grid-container .grid-images {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4px;
+            justify-content: center;
+            box-shadow: 0px 0px 100px rgba(173, 243, 11, 1);
+        }
+        
+        #grid-container .grid-images img {
+            width: auto;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+        #container img {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            filter: drop-shadow(0 0 20px rgba(255, 192, 1, 0.979));
+            object-fit: cover;
+            transition: transform 0.4s ease-in-out, filter 0.4s ease;
+            cursor: pointer;
+        }
+        
+        #container img:hover {
+  transform: scale(1.2); /* Zoom in slightly */
+  filter: drop-shadow(0 0 35px rgba(255, 255, 255, 0.7)); /* Glow effect */
+}
+
+        #container img:active {
+            transform: scale(0.9); /* Zoom out slightly on click */
+            /* filter: drop-shadow(0 0 10px rgba(255, 192, 1, 0.5)); Dim glow effect */
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="flex-container">
+        <h1>Flexbox Layout</h1>
+        <div class="flex-images">
+            <img src="My pic.jpeg" alt="">
+            <img src="My pic.jpeg" alt="">
+            <img src="My pic.jpeg" alt="">
+        </div>
+    </div>
+    
+    <div id="grid-container">
+        <h1>Grid Layout</h1>
+        <div class="grid-images">
+            <img src="My pic.jpeg" alt="">
+            <img src="My pic.jpeg" alt="">
+            <img src="My pic.jpeg" alt="">
+        </div>
+    </div>
+
+    <div id="container"><img src="My pic.jpeg"><img src="My pic.jpeg"><img src="My pic.jpeg"></div>
+</body>
+</html>

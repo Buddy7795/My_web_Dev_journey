@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* Element Selectors */
+        div {
+            color: rebeccapurple ;
+            background-color: burlywood;
+            margin: 5px;
+        }
+
+        /* Child Selectors */   /* Select the direct child under the selector */
+        #div2 > p {  
+            background-color: red;
+        }
+        
+        /* Desendant Selectors */  /* selects all the decents under the selectors */
+        div p {
+            background-color: yellowgreen;
+            margin: 5px;
+        }
+
+        *{
+            margin : 0;
+            padding : 10px;
+            border: 1px darkred solid; 
+            border-radius: 10px;
+        }
+
+        html {
+            margin: 10px;
+        }
+
+        /* pseudo selectors */
+        
+        a{
+            font-size: larger;
+        }
+
+        #links{
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+            justify-content: space-around;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:link{
+            color: darkgreen
+        }
+        
+        a:hover{
+            color: purple;
+        }
+
+        a:active{
+            background-color: crimson;
+        }
+
+        p:first-child{
+            background: linear-gradient(90deg,violet,indigo,blue, green,orange, yellow, red );
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div>
+        Hello Iam a div
+        <p>Iam 1st Child of div1</p>
+        <p>Iam 2nd Child of div1</p>
+    </div>
+
+    <div id="div2">
+        Hello Iam div 2
+        <p>Iam 1st Child of Div 2</p>
+        <p>Iam 2nd Child of Div 2</p>
+    </div>
+
+    <div id="links">
+        <a href="https://www.google.com" target="_blank">Google </a>
+        <a href="https://www.pubg.com">PUBG </a>
+        <a href="Dockerfile">Docker</a>
+        <a href="index.html">Index File</a>
+    </div>
+</body>
+</html>

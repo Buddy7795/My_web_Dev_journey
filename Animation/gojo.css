@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    background-image: url("𝐵𝑎𝑡𝑡𝑙𝑒𝑜𝑓𝑫𝒐𝒎𝒂𝒊𝒏𝒔.jpeg");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-size: 300px;
+}
+
+/* .gojo {
+    color: white;
+    background-image: url("𝐵𝑎𝑡𝑡𝑙𝑒𝑜𝑓𝑫𝒐𝒎𝒂𝒊𝒏𝒔.jpeg");
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+* {
+    background-color: black;
+} */

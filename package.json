@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "anime": "^0.1.2",
+    "animejs": "^4.2.2",
+    "js": "^0.1.0"
+  }
+}
