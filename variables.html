@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables in CSS</title>
+    <style>
+
+        :root{
+            --color: rgb(0, 128, 255);
+            --seccolor: #00ffff;
+            --mypad: 10px;
+            --emoji: "👉🏻"
+
+        }
+        ul{
+            display: flex;
+            background-color: var(--color);
+            /* flex-direction: row-reverse; */
+        }
+
+        li{
+            background-color: var(--seccolor);
+            padding:  var(--mypad);
+            margin: 10px;
+            list-style-type: var(--emoji);
+        }
+
+        section{
+            padding: var(--mypad);
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <section>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, praesentium
+      nulla! Itaque temporibus sed veritatis inventore eligendi! Eaque
+      repellendus aliquid quidem, quae possimus, neque ipsum odit error dolorum
+      exercitationem cum explicabo unde reprehenderit eos quibusdam alias
+      tempore! Quisquam qui ipsam sint dolorum! Harum, facere odio!
+    </section>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries in HTML</title>
+    <style>
+
+        :root{
+            --mycolor: rgb(252, 45, 45);
+        }
+        .parent{
+            background-color: var(--mycolor);
+            width: 500px;
+            /* max-width: 80vh; */
+            margin: 10px auto;
+            padding: 16px;
+            border-radius: 22px;
+            box-shadow: 0 0 20p var(--mycolor);
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgb(77, 210, 77);
+            margin-bottom: 5px;
+            /* object-fit: cover; */
+            /* background-color: red; */
+        }
+        .hanuman {
+            display: inline-block;
+            padding: 10px;
+            border: 4px dashed rgb(232, 117, 117);
+            border-radius: 1em;
+            margin: 10px 10px;
+            font-size: 1.5em;
+            color: rgb(77, 210, 77);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .hanuman:hover{
+            box-shadow: 0 0 10px gold;
+            background: linear-gradient(to left, goldenrod, gold);
+            color: hsl(143, 100%, 48%);
+            border: 0 solid red;
+        }
+        div > p {
+            line-height: 1.5;
+            font-size: 1.2rem;
+            margin: 0;
+        } 
+
+        @media only screen and (max-width: 445px) {
+            body{
+                background: radial-gradient(red, green, blue);
+            }
+        }
+    </style>
+  </head>
+  <body>
+        <div class="parent">
+            <img src="./Media/The-Legend-of-Hanuman.jpg" alt="Hanuman">
+           
+            <div class="hanuman">Hanuman</div>
+            <div class="hanuman">The legend of hanuman</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+            porro exercitationem! Modi accusantium nostrum repellendus dolorum
+            iste nulla ipsum aut quos unde culpa voluptas alias sed cupiditate
+            itaque adipisci ab iusto asperiores fuga, totam eligendi maxime
+            nobis nisi. Dicta architecto explicabo qui dolorum perspiciatis
+            animi, minus incidunt. Veritatis, architecto repudiandae!
+          </p>
+        </div>
+      </body>
+</html>
