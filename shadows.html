@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows in CSS</title>
+    <style>
+        .box{
+            margin: 10px 40px;
+            margin-top: 40px;
+            border: 4px solid lawngreen;
+            border-radius: 10px;
+            padding: 20px;
+
+            background: linear-gradient(180deg, lavender, violet,tomato);
+            font-family: fantasy;
+            font-size: 2em;
+            text-align: center;
+            text-indent: 5px;
+            text-transform: uppercase;
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+            box-shadow: 0px 0px 18px 18px purple;
+            /* text-shadow: h-offset v-offset blur color; */
+            text-shadow: 4px 4px 2px rgb(15, 137, 237);
+            /* outline: width style color; */
+            outline: 8px solid orange;
+            outline-offset: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hello, I am a box with shadow.
+    </div>
+</body>
+</html>
