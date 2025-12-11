@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Color Navbar</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --primary: #1a1a1a; /* Navbar background */
+        --secondary: #ffffff; /* Text color */
+        --accent: #4dabf7; /* Highlight / hover */
+        --muted: #6c757d; /* Subtle text */
+        --hover: #74c0fc; /* Hover link color */
+        --mycolor: rgba(16, 243, 16, 0.913);
+        --mycolor2: rgba(252, 0, 0, 0.838);
+        --mycolor3: linear-gradient(270deg, var(--mycolor), var(--mycolor2));
+        --transparent: transparent;
+      }
+
+      nav {
+        color: burlywood;
+        padding: 10px;
+        margin: 10px;
+        background-color: var(--primary);
+        border-radius: 5px;
+      }
+      ul {
+        display: flex;
+        padding: 5px 20px;
+        margin: 0 5px;
+        justify-content: space-evenly;
+        background-color: var(--final);
+      }
+      li {
+        font-size: 2em;
+        padding: 6px 17px;
+        /* border: 2px solid black; */
+        border-radius: 35px;
+        list-style-type: none;
+        margin: 5px 5px;
+        box-shadow: 0 0 10px gold;
+        background-color: var(--accent);
+      }
+      a {
+        text-decoration: none;
+        color: var(--secondary);
+        cursor: pointer;
+      }
+
+      a:active{
+        color: var(--mycolor2);
+      }
+      a:visited{
+        color: var(--mycolor);
+      }
+
+      a:hover{
+        color: var(--mycolor3);
+        transition-duration: 100ms;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-delay: 10ms;
+        transform: scale(1.1);
+        /* transform: scaleY(1.1) translateY(1.1); */
+      }
+
+      li:hover{
+        transform: rotate(10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="shadows.html" target="_blank" rel="noopener noreferrer"
+            >Shadows</a
+          >
+        </li>
+        <li>
+          <a href="Heart.html" target="_blank" rel="noopener noreferrer"
+            >Heart1</a
+          >
+        </li>
+        <li>
+          <a href="HeartTrial.html" target="_blank" rel="noopener noreferrer"
+            >Heart2</a
+          >
+        </li>
+        <li>
+          <a href="HeartTrial2.html" target="_blank" rel="noopener noreferrer"
+            >Heart3</a
+          >
+        </li>
+        <li>
+          <a href="card_exercise.html" target="_blank" rel="noopener noreferrer"
+            >Card</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
