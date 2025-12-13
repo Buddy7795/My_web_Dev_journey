@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UltraEdit</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 10px 30px;
+      }
+
+      header {
+        display: flex;
+        width: 80vw;    
+        text-align: center;
+        justify-content: space-between;
+      }
+
+      select{
+        max-width: 80px;
+        margin: 0 5px;
+        border: none;
+      }
+
+      header h2 {
+        margin-bottom: 10px;
+      }
+      nav {
+        display: flex;
+        /* background-color: lightgray;  */
+      }
+
+      .main {
+        text-align: center;
+        padding: 20px;
+        background-color: antiquewhite;
+      }
+
+      .main h1 {
+        margin: 15px 0;
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      .main p {
+        text-align: center;
+        color: gray;
+
+        font-size: 1.2rem;
+        margin: 15px 0;
+      }
+
+      button {
+        background-color: orange;
+        color: black;
+        border: none;
+        padding: 12px;
+        border-radius: 5px;
+      }
+
+      main {
+        text-align: center;
+        margin: 15px auto;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+
+      .card {
+        height: 200px;
+        width: 425px;
+        background-color: lightsteelblue;
+      }
+
+      .card p:nth-last-of-type(2) {
+        margin: 15px 0;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>UltraEdit</h2>
+      <nav>
+        <select>
+          <option value="Products" selected>Products</option>
+          <option value="Products">UltraEdit</option>
+          <option value="Products">UltraCompare</option>
+          <option value="Products">UEStudio</option>
+          <option value="Products">UltraFinder</option>
+        </select>
+        <select>
+          <option value="Buy" selected>Buy</option>
+          <option value="Buy">UltraEdit Core</option>
+          <option value="Buy">UltraEdit Enterprise</option>
+          <option value="Buy">Academic Licenses (Free/Discounted)</option>
+        </select>
+        <select>
+          <option value="Support" selected>Support</option>
+          <option value="Support">Technical Support</option>
+          <option value="Support">Extra Support</option>
+          <option value="Support">User Forums</option>
+          <option value="Support">Contact Us</option>
+        </select>
+        <select>
+          <option value="Learn" selected>Learn</option>
+          <option value="Learn">Power Tips</option>
+          <option value="Learn">Video Tutorials</option>
+          <option value="Learn">Wiki</option>
+          <option value="Learn">FAQs</option>
+          <option value="Learn">White Papers</option>
+          <option value="Learn">Blog</option>
+        </select>
+        <select>
+          <option value="Company" selected>Company</option>
+          <option value="Company">About</option>
+          <option value="Company">Testimonials</option>
+          <option value="Company">Events</option>
+        </select>
+      </nav>
+      <button>Dowload</button>
+      <button>English</button>
+    </header>
+
+    <section class="main">
+      <h1>Download UltraEdit for Windows</h1>
+
+      <pre>
+        Download and try UltraEdit before you buy it! This download 
+        includes the full Windows version of the text editor.
+      </pre>
+      <button>Download Mac or Linux version</button>
+
+      <p>Download UltraEdit v2025.1 (released 2025-12-11) | Latest changes</p>
+    </section>
+
+    <main>
+      <div class="cards">
+        <div class="card">
+          <p>English</p>
+          <button>Download 64-bit</button>
+          <p>sha258</p>
+        </div>
+        <div class="card">
+          <p>English</p>
+          <button>Download 64-bit</button>
+          <p>sha258</p>
+        </div>
+        <div class="card">
+          <p>English</p>
+          <button>Download 64-bit</button>
+          <p>sha258</p>
+        </div>
+        <div class="card">
+          <p>English</p>
+          <button>Download 64-bit</button>
+          <p>sha258</p>
+        </div>
+        <div class="card">
+          <p>English</p>
+          <button>Download 64-bit</button>
+          <p>sha258</p>
+        </div>
+        <div class="card">
+          <p>English</p>
+          <button>Download 64-bit</button>
+          <p>sha258</p>
+        </div>
+        <div class="card">
+          <p>English</p>
+          <button>Download 64-bit</button>
+          <p>sha258</p>
+        </div>
+        <div class="card">
+          <p>English</p>
+          <button>Download 64-bit</button>
+          <p>sha258</p>
+        </div>
+        <div class="card">
+          <p>English</p>
+          <button>Download 64-bit</button>
+          <p>sha258</p>
+        </div>
+        <div class="card">
+          <p>English</p>
+          <button>Download 64-bit</button>
+          <p>sha258</p>
+        </div>
+      </div>
+    </main>
+
+    <section>
+      <h1>Join the UltraEdit newsletter</h1>
+      <p>
+        Sign up for our newsletter and receive emails for the latest news,
+        blogs, and special deals on UltraEdit.
+      </p>
+
+      <div class="box">
+        <h3>Subscribe to our emails</h3>
+        <p>Enter email address</p>
+        <input type="text" id="" />
+        <button>SIGN UP</button>
+      </div>
+    </section>
+
+    <footer>
+      <h2>EXE or MSI?</h2>
+      <p>
+        The EXE builds of our products are the preferred download for most of
+        our users, running Windows 10 and later. We make MSI builds available
+        for bulk or silent deployments (command line, GPO, SCCM, etc.).
+        <a href="">Get the UltraEdit MSI installer.</a>
+      </p>
+
+      <h2>Free trial period</h2>
+      <p>
+        This application comes with a free, fully functional 7 day trial period.
+        After the trial period expires, you must
+        <a href="">purchase a license</a> to continue using it.
+      </p>
+
+      <div class="foot">
+        <h4>UltraEdit</h4>
+        <p>
+          UltraEdit is the powerful text editor built for developers, data
+          wranglers, and IT pros handling large files and complex tasks.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
