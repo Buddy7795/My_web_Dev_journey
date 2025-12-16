@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transformations</title>
+    <style>
+
+        .container {
+            height: 80vh;
+            width: 80vw;
+            border: 2px solid peru;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 2px auto ;
+        }
+        
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            width: 20%;
+            border: 2px solid teal;
+            background-color: lightgreen;
+            font-size: 1.5rem;
+            font-weight: 900;
+            transition: ease-in-out 0.8s;
+        }
+
+        .rotate:hover {
+            transform: rotate(180deg);
+        }
+
+        .rotateX:hover {
+            transform: rotateX(180deg);
+        }
+        .rotateY:hover {
+            transform: rotateY(180deg);
+        }
+        .rotateZ:hover {
+            transform: rotateZ(-180deg);
+        }
+
+        .scale:hover {
+            transform: scale(1.5);
+        }
+
+        .scaleX:hover {
+            transform: scaleX(1.5);
+        }
+        
+        .scaleY:hover {
+            transform: scaleY(1.5);
+        }
+
+        .scaleZ:hover {
+            transform: scaleZ(5);
+        }
+
+        .translate:hover {
+            transform: translate(30px, 30px);
+        }
+
+        .translateX:hover {
+            transform: translateX(30px);
+        }
+
+        .translateY:hover {
+            transform: translateY(30px);
+        }
+
+        .translateZ:hover {
+            transform: translateZ(-50px);
+        }
+
+        .translateZ::before, .scaleZ::before {
+            content: '❌';
+        }
+
+        .translateZ::after, .scaleZ::after {
+            content: '❌';
+        }
+
+        .skew:hover {
+            transform: skew(20deg, 20deg);
+        }
+
+        .skewX:hover {
+            transform: skewX(40deg);
+        }
+
+        .skewY:hover {
+            transform: skewY(40deg);
+        }
+
+        h1{
+            text-align: center;
+            margin: 20px 0;
+            color: hotpink;
+            transform: scale(2.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transformations</h1>
+    <div class="container">
+        <div class="box rotate">Rotate</div>
+        <div class="box rotateX">RotateX</div>
+        <div class="box rotateY">RotateY</div>
+        <div class="box rotateZ">RotateZ</div>
+        <div class="box scale">Scale</div>
+        <div class="box scaleX">ScaleX</div>
+        <div class="box scaleY">ScaleY</div>
+        <div class="box scaleZ">ScaleZ</div>
+        <div class="box translate">Translate</div>
+        <div class="box translateX">TranslateX</div>
+        <div class="box translateY">TranslateY</div>
+        <div class="box translateZ">TranslateZ</div>
+        <div class="box skew">Skew</div>
+        <div class="box skewX">SkewX</div>
+        <div class="box skewY">SkewY</div>
+
+    </div>
+</body>
+</html>
