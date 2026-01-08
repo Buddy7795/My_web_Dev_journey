@@ -102,6 +102,36 @@
             color: hotpink;
             transform: scale(2.2);
         }
+
+        /* Mobile Phones */
+@media screen and (max-width: 768px) {
+
+    h1 {
+        transform: scale(1);
+        font-size: 1.8rem;
+        margin: 15px 0;
+    }
+
+    .container {
+        width: 95vw;
+        height: auto;
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    .box {
+        width: 45%;          /* 2 boxes per row */
+        height: 90px;
+        font-size: 1.1rem;
+    }
+
+    /* Prevent extreme 3D effects on mobile */
+    .scaleZ:hover,
+    .translateZ:hover {
+        transform: none;
+    }
+}
+
     </style>
 </head>
 <body>

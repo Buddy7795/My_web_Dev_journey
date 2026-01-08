@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: coral;
+            /* animation: moveAndColorChange 4s infinite alternate ease-in-out; */
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation: moveAndColorChange 4s ease-in-out 0s infinite alternate both;
+        }
+
+        @keyframes moveAndColorChange {
+            0% {
+                transform: translateX(0) translateY(0);
+                background-color: coral;
+            }
+            50% {
+                transform: translateX(200px) translateY(0) rotate(90deg) ;
+                background-color: mediumseagreen;
+            }
+            100% {
+                transform: translateX(200px) translateY(200px) scale(1.2);
+                background-color: royalblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
